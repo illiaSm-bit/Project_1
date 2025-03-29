@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-                 content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+                 content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Future Tech | Home</title>
     <link rel="stylesheet" href="style/main.css">
-    <script src="scripts/main.js" type="module" defer></script>
+    <script src="./scripts/main.js" type="module"></script>
 </head>
 <body>
-    <header class="header">
+    <header class="header" data-js-header>
         <div class="header__promo">
             <div class="header__promo-inner container">
                 <a href="" class="header__promo-link">
@@ -22,7 +22,7 @@
                 <a
                 class="header__logo logo"
                  href="/"
-                 arial-label="Home"
+                 aria-label="Home"
                   title="Home"
                   >
                 <img
@@ -32,7 +32,7 @@
                  width="179" height="50" 
                  />
                 </a>
-                <div class="header__overlay is-active">
+                <div class="header__overlay " data-js-header-overlay>
                 <nav class="header__menu">
                     <ul class="header__menu-list">
 
@@ -63,6 +63,7 @@
                   type="button"
                   aria-label="Open Menu"
                   title="Open Menu"
+                  data-js-header-burger-button
                   >
                     <span class="burger-button__line"></span>
                     <span class="burger-button__line"></span>
@@ -70,7 +71,199 @@
                 </button>
             </div>
         </div>
+
     </header>
+    <main>
+
+    </main>
+ 
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footet__body">
+                <nav class="footer__menu">
+                    <div class="footer__menu-column">
+                        <a href="" class="footer__menu-main-link h6 ">Home</a>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">Features</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">Blogs</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">Resources 
+                                    <span class="badge"> New</span>
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">Testimonials</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">Contact Us</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">Newsletter</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__menu-column">
+                        <a href="" class="footer__menu-main-link h6 ">News</a>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">Trending Stories</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">Featured Videos</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">Technology</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">Health</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">Politics</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">Environment</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__menu-column">
+                        <a href="" class="footer__menu-main-link h6 ">Blogs</a>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">Quantum Computing</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">AI Ethics</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">Space Exploration</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">Biotechnology  
+                                    <span class="badge"> New</span>
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">Renewable Energy</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">Biohacking</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__menu-column">
+                        <a href="" class="footer__menu-main-link h6 ">Podcasts</a>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">AI Revolution</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">AI Revolution
+                                    <span class="badge"> New</span>
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">TechTalk AI</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">AI Conversations</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__menu-column">
+                        <a href="" class="footer__menu-main-link h6 ">Resources 
+                            
+                        </a>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link button">Whitepapers
+                                    <span class="icon icon--yellow-arrow"> </span>
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link button">Ebooks 
+                                    <span class="icon icon--yellow-arrow"></span>
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link button">Reports 
+                                    <span class="icon icon--yellow-arrow"></span>
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link button">Research Papers 
+                                    <span class="icon icon--yellow-arrow"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav>
+
+            </div>
+            <div class="footer__exstra">
+                <div class="footer__extra-menu">
+                    <ul class="footer__extra-menu-list">
+                        <li class="footer__extra-menu-item">
+                            <a href="" class="footer__extra-menu-link">Terms & Conditions</a>
+                        </li>
+                        <li class="footer__extra-menu-item">
+                            <a href="" class="footer__extra-menu-link">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__soc1als soc1als">
+                    <ul class="soc1als__list">
+                        <li class="soc1als__item">
+                            <a 
+                            class="soc1als__link" 
+                            href="/" 
+                            target="_blank"
+                            aria-label="Twitter"
+                            title="Twitter"
+                            >
+                            <img src="icons/Twitter.svg" alt="" width="24" height="24" >
+                        </a>
+                        </li>
+
+                        <li class="soc1als__item">
+                            <a 
+                            class="soc1als__link" 
+                            href="/" 
+                            target="_blank"
+                            aria-label="Medium"
+                            title="Medium"
+                            >
+                            <img src="icons/Icon.svg" alt="" width="24" height="24" >
+                        </a>
+                        </li>
+
+                        <li class="soc1als__item">
+                            <a 
+                            class="soc1als__link" 
+                            href="/" 
+                            target="_blank"
+                            aria-label="LinkedIn"
+                            title="LinkedIn"
+                            >
+                            <img src="icons/Icon2.svg" alt="" width="24" height="24" >
+                        </a>
+                        </li>
+
+                    </ul>
+                </div>
+                    <p class="footer__copyright-text">
+                        © <time datetime="2024"> 2024 </time> FutureTech. All rights reserved.
+                    </p>
+        </div>
+    </footer>
 
 </body>
 </html>
